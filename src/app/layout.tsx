@@ -18,36 +18,36 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: {
     default:
-      "Neobrutalism components - Start making neobrutalism layouts today",
-    template: `%s - Neobrutalism components`,
+      "Shatcn components - Start making poop-inspired layouts today",
+    template: `%s - Shatcn components`,
   },
   description:
-    "A collection of neobrutalism-styled components based on shadcn/ui.",
+    "A collection of poop and fart-inspired styled components based on shadcn/ui.",
   keywords: [
-    "neobrutalism",
-    "neobrutalism components",
-    "neobrutalism tailwind",
-    "react neobrutalism",
+    "shatcn",
+    "shatcn components",
+    "poop components",
+    "fart components",
     "react tailwind components",
     "shadcn components",
-    "shadcn neobrutalism",
+    "shadcn poop",
   ],
   authors: [{ name: "Samuel Breznjak", url: "https://github.com/ekmas" }],
   openGraph: {
     type: "website",
     description:
-      "A collection of neobrutalism-styled components based on shadcn/ui.",
-    images: ["https://www.neobrutalism.dev/preview.png"],
-    url: "https://www.neobrutalism.dev/",
-    title: "Neobrutalism components",
+      "A collection of poop and fart-inspired styled components based on shadcn/ui.",
+    images: ["https://www.shatcn.dev/preview.png"],
+    url: "https://www.shatcn.dev/",
+    title: "Shatcn components",
   },
-  metadataBase: new URL("https://www.neobrutalism.dev/"),
+  metadataBase: new URL("https://www.shatcn.dev/"),
   twitter: {
     card: "summary_large_image",
-    title: "Neobrutalism components - Start making neobrutalism layouts",
+    title: "Shatcn components - Start making poop-inspired layouts",
     description:
-      "A collection of neobrutalism-styled components based on shadcn/ui.",
-    images: ["https://www.neobrutalism.dev/preview.png"],
+      "A collection of poop and fart-inspired styled components based on shadcn/ui.",
+    images: ["https://www.shatcn.dev/preview.png"],
     creator: "@samuelbreznjak",
   },
 }

@@ -1,7 +1,7 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import Search from "@/components/app/search"
-import { ThemeSwitcher } from "@/components/app/theme-switcher"
+import Search from "@/components/app/search";
+import { ThemeSwitcher } from "@/components/app/theme-switcher";
 
 async function getRepoData() {
   const res = await fetch(
@@ -13,19 +13,19 @@ async function getRepoData() {
         Authorization: `Bearer ${process.env.GH_API_KEY}`,
       },
     },
-  )
+  );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data")
+    throw new Error("Failed to fetch data");
   }
 
-  return res.json()
+  return res.json();
 }
 
 async function Navbar() {
-  const repo = await getRepoData()
+  const repo = await getRepoData();
 
-  const starsCount = (repo.stargazers_count / 1000).toFixed(1) + "k"
+  const starsCount = (repo.stargazers_count / 1000).toFixed(1) + "k";
 
   return (
     <nav className="fixed left-0 top-0 z-20 mx-auto flex h-[70px] w-full items-center border-b-4 border-border bg-secondary-background px-5">
@@ -65,6 +65,7 @@ async function Navbar() {
               target="_blank"
               href="https://github.com/ekmas/neobrutalism-components"
               className="flex gap-2 items-center justify-center rounded-base border-2 border-border shadow-nav dark:shadow-navDark dark:border-darkBorder px-1.5 h-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
+              rel="noopener"
             >
               <p className="font-semibold sm:inline hidden">{starsCount}</p>
 
@@ -83,6 +84,7 @@ async function Navbar() {
               target="_blank"
               href="https://twitter.com/samuelbreznjak"
               className="flex items-center justify-center rounded-base border-2 border-border shadow-nav dark:shadow-navDark dark:border-darkBorder size-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
+              rel="noopener"
             >
               <svg
                 className="size-5"
@@ -101,7 +103,8 @@ async function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
+export default Navbar;

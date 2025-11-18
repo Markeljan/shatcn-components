@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --border-radius: 5px;
+  --border-radius: 20px 15px 25px 10px / 15px 20px 10px 25px;
   --box-shadow-x: 4px;
   --box-shadow-y: 4px;
   --reverse-box-shadow-x: -4px;
@@ -15,37 +15,45 @@
   --heading-font-weight: 700;
   --base-font-weight: 500;
 
-  --background: oklch(93.46% 0.0304 254.32);
-  --secondary-background: oklch(100% 0 0);
+  --background: oklch(92% 0.04 60);
+  --secondary-background: oklch(70% 0.15 160);
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
 
-  --main: oklch(67.47% 0.1725 259.61);
+  --main: oklch(65% 0.12 45);
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
+  --plumbing-green: oklch(70% 0.15 160);
 
   --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 
-  --chart-1: oklch(67.47% 0.1726 259.49);
-  --chart-2: oklch(67.28% 0.2147 24.22);
-  --chart-3: oklch(86.03% 0.176 92.36);
-  --chart-4: oklch(79.76% 0.2044 153.08);
-  --chart-5: oklch(66.34% 0.1806 277.2);
+  --chart-1: oklch(65% 0.12 45);
+  --chart-2: oklch(55% 0.15 40);
+  --chart-3: oklch(75% 0.08 55);
+  --chart-4: oklch(70% 0.15 160);
+  --chart-5: oklch(60% 0.10 50);
   --chart-active-dot: #000;
 }
 
 .dark {
-  --background: oklch(29.12% 0.0633 270.86);
-  --secondary-background: oklch(23.93% 0 0);
+  --background: oklch(28% 0.06 50);
+  --secondary-background: oklch(50% 0.12 160);
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
 
+  --main: oklch(50% 0.16 38);
   --border: oklch(0% 0 0);
   --ring: oklch(100% 0 0);
+  --plumbing-green: oklch(50% 0.12 160);
 
   --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 
+  --chart-1: oklch(50% 0.16 38);
+  --chart-2: oklch(40% 0.13 35);
+  --chart-3: oklch(65% 0.10 50);
+  --chart-4: oklch(50% 0.12 160);
+  --chart-5: oklch(55% 0.11 48);
   --chart-active-dot: #fff;
 }
 
@@ -58,6 +66,7 @@
   --color-border: var(--border);
   --color-overlay: var(--overlay);
   --color-ring: var(--ring);
+  --color-plumbing-green: var(--plumbing-green);
 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);

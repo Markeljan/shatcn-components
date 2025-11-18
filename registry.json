@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "Neobrutalism Components",
-  "homepage": "https://neobrutalism.dev",
+  "name": "Shatcn Components",
+  "homepage": "https://shatcn.dev",
   "author": "Samuel Breznjak <samke.me>",
   "items": [
     {
@@ -37,7 +37,7 @@
         "@radix-ui/react-alert-dialog"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json"
+        "https://shatcn.dev/r/nbutton.json"
       ],
       "files": [
         {
@@ -121,7 +121,7 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json"
+        "https://shatcn.dev/r/nbutton.json"
       ],
       "files": [
         {
@@ -160,7 +160,7 @@
         "embla-carousel-react"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json"
+        "https://shatcn.dev/r/nbutton.json"
       ],
       "files": [
         {
@@ -178,7 +178,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/ncard.json"
+        "https://shatcn.dev/r/ncard.json"
       ],
       "files": [
         {
@@ -223,7 +223,7 @@
         "cmdk"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/ndialog.json"
+        "https://shatcn.dev/r/ndialog.json"
       ],
       "files": [
         {
@@ -314,8 +314,8 @@
         "react-hook-form"
       ],
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json",
-        "https://neobrutalism.dev/r/nlabel.json"
+        "https://shatcn.dev/r/nbutton.json",
+        "https://shatcn.dev/r/nlabel.json"
       ],
       "files": [
         {
@@ -457,7 +457,7 @@
       "title": "Pagination",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json"
+        "https://shatcn.dev/r/nbutton.json"
       ],
       "files": [
         {
@@ -583,11 +583,11 @@
       "title": "Sidebar",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://neobrutalism.dev/r/nbutton.json",
-        "https://neobrutalism.dev/r/nsheet.json",
-        "https://neobrutalism.dev/r/ntooltip.json",
-        "https://neobrutalism.dev/r/ninput.json",
-        "https://neobrutalism.dev/r/nskeleton.json"
+        "https://shatcn.dev/r/nbutton.json",
+        "https://shatcn.dev/r/nsheet.json",
+        "https://shatcn.dev/r/ntooltip.json",
+        "https://shatcn.dev/r/ninput.json",
+        "https://shatcn.dev/r/nskeleton.json"
       ],
       "files": [
         {

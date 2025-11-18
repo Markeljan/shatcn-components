@@ -1,5 +1,5 @@
 {
-  "name": "neobrutalism-components",
+  "name": "shatcn-components",
   "private": true,
   "scripts": {
     "dev": "next dev",

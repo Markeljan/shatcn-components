@@ -4,7 +4,7 @@ import COMPONENTS from "@/data/components"
 
 import { transformToSlug } from "@/lib/utils"
 
-const root = "https://www.neobrutalism.dev"
+const root = "https://www.shatcn.dev"
 
 const DOCS_PAGES = [
   "/docs",

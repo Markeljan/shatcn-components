@@ -45,7 +45,7 @@ export default function Home() {
             <h1 className="leading-normal">
               Get started with creating <br />{" "}
               <span className="relative px-2 sm:mr-2 mr-0 md:[&_svg]:size-[45px] sm:[&_svg]:size-7 bg-main/50 rounded-base border-2 border-border/40 dark:border-border/70">
-                neobrutalism
+                shatcn
                 <Star9
                   className="absolute sm:block hidden md:-bottom-4 md:-right-5 -bottom-2.5 -right-2.5"
                   color="var(--main)"
@@ -61,7 +61,7 @@ export default function Home() {
             </h1>
 
             <p className="leading-snug w-full md:mt-[50px] md:mb-[60px] sm:mt-12 my-9 sm:mb-10 2xl:text-3xl xl:text-2xl lg:text-2xl xl:w-full lg:w-2/3 md:w-full md:text-2xl sm:text-xl text-xl">
-              A collection of neobrutalism-styled components based on shadcn/ui.
+              A collection of poop and fart-inspired styled components based on shadcn/ui.
             </p>
 
             <Link
@@ -85,13 +85,13 @@ export default function Home() {
                 className="flex items-center md:gap-[50px] gap-[35px] xl:[&_span]:text-3xl md:[&_span]:text-2xl sm:[&_span]:text-xl [&_span]:text-base lg:[&_svg]:size-[50px] md:[&_svg]:size-10 [&_svg]:size-[30px]"
                 key={id}
               >
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star32 className="text-foreground" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star22 stroke="black" strokeWidth={6} color="var(--main)" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star11 className="text-foreground" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star26 color="var(--main)" stroke="black" strokeWidth={7} />
               </div>
             )
@@ -274,7 +274,7 @@ export default function Home() {
                   <a
                     target="_blank"
                     className="underline font-heading"
-                    href="https://github.com/ekmas/neobrutalism-components/blob/main/CONTRIBUTING.md"
+                    href="https://github.com/ekmas/shatcn-components/blob/main/CONTRIBUTING.md"
                   >
                     contributing.md
                   </a>{" "}
@@ -295,13 +295,13 @@ export default function Home() {
                 className="flex items-center md:gap-[50px] gap-[35px] xl:[&_span]:text-3xl md:[&_span]:text-2xl sm:[&_span]:text-xl [&_span]:text-base lg:[&_svg]:size-[50px] md:[&_svg]:size-10 [&_svg]:size-[30px]"
                 key={id}
               >
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star29 className="text-foreground" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star37 stroke="black" strokeWidth={6} color="var(--main)" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star16 className="text-foreground" />
-                <span>Neobrutalism components</span>
+                <span>Shatcn components</span>
                 <Star8 color="var(--main)" stroke="black" strokeWidth={7} />
               </div>
             )
@@ -309,7 +309,7 @@ export default function Home() {
         </Marquee>
         <section className="inset-0 w-full flex flex-col items-center justify-center bg-main  bg-[linear-gradient(to_right,#00000033_1px,transparent_1px),linear-gradient(to_bottom,#00000033_1px,transparent_1px)] bg-[size:70px_70px] px-5 lg:py-[200px] md:py-[150px] sm:py-[100px] py-[100px]">
           <h2 className="text-center font-heading not-prose 2xl:text-5xl xl:text-5xl md:text-4xl sm:text-3xl text-[22px] text-main-foreground mb-12">
-            Start your neobrutalism project today.
+            Start your shatcn project today.
           </h2>
 
           <Link
@@ -382,7 +382,7 @@ export default function Home() {
         Released under MIT License. The source code is available on{" "}
         <a
           target="_blank"
-          href="https://github.com/ekmas/neobrutalism-components"
+          href="https://github.com/ekmas/shatcn-components"
           className="underline font-heading"
         >
           Github
