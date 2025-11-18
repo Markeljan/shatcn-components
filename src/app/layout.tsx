@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "shadcn components",
     "shadcn poop",
   ],
-  authors: [{ name: "Samuel Breznjak", url: "https://github.com/ekmas" }],
+  authors: [{ name: "Samuel Breznjak", url: "https://github.com/markeljan" }],
   openGraph: {
     type: "website",
     description:
@@ -60,17 +60,17 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth" suppressHydrationWarning lang="en">
       <body className={dmSans.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            disableTransitionOnChange
-          >
-            <Navbar />
-            {children}
-            <SetStylingPref />
-            <ScrollToTop />
-            <Toaster />
-          </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <SetStylingPref />
+          <ScrollToTop />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )

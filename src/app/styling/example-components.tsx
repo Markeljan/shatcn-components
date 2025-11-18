@@ -1,6 +1,8 @@
-import AlertDemo from "@/examples/ui/alert"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -8,19 +10,20 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import AlertDemo from "@/examples/ui/alert";
 
-import AccordionDemo from "./demos/accordion"
-import CardDemo2 from "./demos/card-2"
-import CardDemo3 from "./demos/card-3"
-import CarouselDemo from "./demos/carousel"
-import CollapsibleDemo from "./demos/collapsible"
-import CommandDemo from "./demos/command"
-import ImageCardDemo from "./demos/image-card"
-import ResizableDemo from "./demos/resizable"
-import ScrollAreaDemo from "./demos/scroll-area"
+import AccordionDemo from "./demos/accordion";
+import CardDemo2 from "./demos/card-2";
+import CardDemo3 from "./demos/card-3";
+import CarouselDemo from "./demos/carousel";
+import CollapsibleDemo from "./demos/collapsible";
+import CommandDemo from "./demos/command";
+import ImageCardDemo from "./demos/image-card";
+import ResizableDemo from "./demos/resizable";
+import ScrollAreaDemo from "./demos/scroll-area";
 
 export default function ExampleComponents() {
   return (
@@ -44,10 +47,13 @@ export default function ExampleComponents() {
         <CardDemo />
       </div>
     </div>
-  )
+  );
 }
 
 const CardDemo = () => {
+  const emailId = React.useId()
+  const passwordId = React.useId()
+
   return (
     <Card>
       <CardHeader>
@@ -60,11 +66,11 @@ const CardDemo = () => {
         <form>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
-              <Label autoFocus={false} htmlFor="email">
+              <Label autoFocus={false} htmlFor={emailId}>
                 Email
               </Label>
               <Input
-                id="email"
+                id={emailId}
                 type="email"
                 placeholder="m@example.com"
                 required
@@ -73,17 +79,17 @@ const CardDemo = () => {
             </div>
             <div className="grid gap-2">
               <div className="flex items-center">
-                <Label autoFocus={false} htmlFor="password">
+                <Label autoFocus={false} htmlFor={passwordId}>
                   Password
                 </Label>
                 <a
-                  href="#"
+                  href="/"
                   className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                 >
                   Forgot your password?
                 </a>
               </div>
-              <Input id="password" type="password" required autoFocus={false} />
+              <Input id={passwordId} type="password" required autoFocus={false} />
             </div>
           </div>
         </form>
@@ -97,11 +103,11 @@ const CardDemo = () => {
         </Button>
         <div className="mt-4 text-center text-sm">
           Don&apos;t have an account?{" "}
-          <a href="#" className="underline underline-offset-4">
+          <a href="/" className="underline underline-offset-4">
             Sign up
           </a>
         </div>
       </CardFooter>
     </Card>
-  )
-}
+  );
+};

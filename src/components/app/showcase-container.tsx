@@ -1,19 +1,30 @@
-import clsx from "clsx"
+"use client";
 
-import { StaticImageData } from "next/image"
+import clsx from "clsx";
+
+import type { StaticImageData } from "next/image";
+import { useFartSound } from "@/hooks/use-fart-sound";
 
 export default function ShowcaseContainer({
   items,
 }: {
   items: {
-    color: string
-    text?: string
-    liveUrl: string
-    previewImg: StaticImageData
-    repoUrl?: string
-    title: string
-  }[]
+    color: string;
+    text?: string;
+    liveUrl: string;
+    previewImg: StaticImageData;
+    repoUrl?: string;
+    title: string;
+  }[];
 }) {
+  const playFartSound = useFartSound();
+
+  const handleLinkClick = async (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    await playFartSound();
+    window.open(href, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="max-w-full grid sm:grid-cols-2 grid-cols-1 gap-5">
       {items.map(({ color, text, liveUrl, previewImg, repoUrl, title }) => {
@@ -44,6 +55,7 @@ export default function ShowcaseContainer({
                 )}
                 target="_blank"
                 href={liveUrl}
+                onClick={(e) => handleLinkClick(e, liveUrl)}
               >
                 Visit
               </a>
@@ -56,14 +68,15 @@ export default function ShowcaseContainer({
                   className="text-center border-2 py-1.5 font-base shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none transition-all border-border rounded-base"
                   target="_blank"
                   href={repoUrl}
+                  onClick={(e) => handleLinkClick(e, repoUrl)}
                 >
                   Github repo
                 </a>
               )}
             </div>
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }

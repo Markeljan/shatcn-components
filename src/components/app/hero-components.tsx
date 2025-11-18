@@ -1,3 +1,5 @@
+"use client"
+
 import { Marquee } from "@devnomic/marquee"
 import { ChevronsUpDown, Terminal } from "lucide-react"
 
@@ -96,59 +98,64 @@ export default function HeroComponents({
   )
 }
 
-const CardExample = () => (
-  <Card className="w-full bg-main text-main-foreground max-w-sm">
-    <CardHeader>
-      <CardTitle>Login to your account</CardTitle>
-      <CardDescription>
-        Enter your email below to login to your account
-      </CardDescription>
-    </CardHeader>
-    <CardContent>
-      <form>
-        <div className="flex flex-col gap-6">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-              tabIndex={-1}
-            />
-          </div>
-          <div className="grid gap-2">
-            <div className="flex items-center">
-              <Label htmlFor="password">Password</Label>
+const CardExample = () => {
+  const emailId = React.useId()
+  const passwordId = React.useId()
+  
+  return (
+    <Card className="w-full bg-main text-main-foreground max-w-sm">
+      <CardHeader>
+        <CardTitle>Login to your account</CardTitle>
+        <CardDescription>
+          Enter your email below to login to your account
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div className="flex flex-col gap-6">
+            <div className="grid gap-2">
+              <Label htmlFor={emailId}>Email</Label>
+              <Input
+                id={emailId}
+                type="email"
+                placeholder="m@example.com"
+                required
+                tabIndex={-1}
+              />
+            </div>
+            <div className="grid gap-2">
+              <div className="flex items-center">
+                <Label htmlFor={passwordId}>Password</Label>
               <a
-                href="#"
+                href="/"
                 className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                 tabIndex={-1}
               >
                 Forgot your password?
               </a>
+              </div>
+              <Input id={passwordId} type="password" required tabIndex={-1} />
             </div>
-            <Input id="password" type="password" required tabIndex={-1} />
           </div>
+        </form>
+      </CardContent>
+      <CardFooter className="flex-col gap-2">
+        <Button variant="neutral" type="submit" className="w-full" tabIndex={-1}>
+          Login
+        </Button>
+        <Button className="w-full" tabIndex={-1}>
+          Login with Google
+        </Button>
+        <div className="mt-4 text-center text-sm">
+          Don&apos;t have an account?{" "}
+          <a href="/" className="underline underline-offset-4" tabIndex={-1}>
+            Sign up
+          </a>
         </div>
-      </form>
-    </CardContent>
-    <CardFooter className="flex-col gap-2">
-      <Button variant="neutral" type="submit" className="w-full" tabIndex={-1}>
-        Login
-      </Button>
-      <Button className="w-full" tabIndex={-1}>
-        Login with Google
-      </Button>
-      <div className="mt-4 text-center text-sm">
-        Don&apos;t have an account?{" "}
-        <a href="#" className="underline underline-offset-4" tabIndex={-1}>
-          Sign up
-        </a>
-      </div>
-    </CardFooter>
-  </Card>
-)
+      </CardFooter>
+    </Card>
+  )
+}
 
 const AlertExample = () => (
   <Alert>

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+import * as TabsPrimitive from "@radix-ui/react-tabs";
 
-import * as React from "react"
-
-import { cn } from "@/lib/utils"
+import type * as React from "react";
+import { useFartSound } from "@/hooks/use-fart-sound";
+import { cn } from "@/lib/utils";
 
 function Tabs({
   className,
@@ -16,7 +16,7 @@ function Tabs({
       className={cn("w-full", className)}
       {...props}
     />
-  )
+  );
 }
 
 function TabsList({
@@ -32,13 +32,21 @@ function TabsList({
       )}
       {...props}
     />
-  )
+  );
 }
 
 function TabsTrigger({
   className,
+  onClick,
   ...props
 }: React.ComponentProps<typeof TabsPrimitive.Trigger>) {
+  const playFartSound = useFartSound();
+
+  const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    await playFartSound();
+    onClick?.(e);
+  };
+
   return (
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
@@ -46,9 +54,10 @@ function TabsTrigger({
         "inline-flex items-center justify-center whitespace-nowrap rounded-base border-2 border-transparent px-2 py-1 gap-1.5 text-sm font-heading ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-main data-[state=active]:text-main-foreground data-[state=active]:border-border",
         className,
       )}
+      onClick={handleClick}
       {...props}
     />
-  )
+  );
 }
 
 function TabsContent({
@@ -64,7 +73,7 @@ function TabsContent({
       )}
       {...props}
     />
-  )
+  );
 }
 
-export { Tabs, TabsList, TabsTrigger, TabsContent }
+export { Tabs, TabsList, TabsTrigger, TabsContent };

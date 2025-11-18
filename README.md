@@ -1,5 +1,5 @@
 # no longer maintained
-read [this](https://github.com/ekmas/neobrutalism-components/discussions/100) for more info
+read [this](https://github.com/markeljan/shatcn-components/discussions/100) for more info
 
 # Neobrutalism components
 
@@ -19,4 +19,4 @@ I created this collection of components for people who want to learn more about 
 
 ## License
 
-[MIT](https://github.com/ekmas/neobrutalism-components/blob/main/LICENSE)
+[MIT](https://github.com/markeljan/shatcn-components/blob/main/LICENSE)

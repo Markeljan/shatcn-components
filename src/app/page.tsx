@@ -1,36 +1,33 @@
-import { Marquee } from "@devnomic/marquee"
-import { ArrowUpRight } from "lucide-react"
+import { Marquee } from "@devnomic/marquee";
+import { ArrowUpRight } from "lucide-react";
 
-import "@/styling/marquee.css"
+import "@/styling/marquee.css";
 
-import Link from "next/link"
-
-import reviews from "@/data/reviews"
-
-import HeroComponents from "@/components/app/hero-components"
-import { sharedComponents } from "@/components/app/mdx-components"
-import { Pre } from "@/components/app/pre"
-import StylingCustomizer from "@/components/app/styling-customizer"
-import Star8 from "@/components/stars/s8"
-import Star9 from "@/components/stars/s9"
-import Star11 from "@/components/stars/s11"
-import Star14 from "@/components/stars/s14"
-import Star16 from "@/components/stars/s16"
-import Star20 from "@/components/stars/s20"
-import Star22 from "@/components/stars/s22"
-import Star26 from "@/components/stars/s26"
-import Star29 from "@/components/stars/s29"
-import Star32 from "@/components/stars/s32"
-import Star37 from "@/components/stars/s37"
+import Link from "next/link";
+import HeroComponents from "@/components/app/hero-components";
+import { sharedComponents } from "@/components/app/mdx-components";
+import StylingCustomizer from "@/components/app/styling-customizer";
+import Star8 from "@/components/stars/s8";
+import Star9 from "@/components/stars/s9";
+import Star11 from "@/components/stars/s11";
+import Star14 from "@/components/stars/s14";
+import Star16 from "@/components/stars/s16";
+import Star20 from "@/components/stars/s20";
+import Star22 from "@/components/stars/s22";
+import Star26 from "@/components/stars/s26";
+import Star29 from "@/components/stars/s29";
+import Star32 from "@/components/stars/s32";
+import Star37 from "@/components/stars/s37";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
+import reviews from "@/data/reviews";
 
 export default function Home() {
-  const { Tabs, TabsContent, TabsList, TabsTrigger } = sharedComponents
+  const { Tabs, TabsContent, TabsList, TabsTrigger } = sharedComponents;
 
   return (
     <div className="text-foreground font-base prose-headings:font-heading prose-h1:2xl:text-6xl prose-h1:xl:text-5xl prose-h1:md:text-5xl prose-h1:sm:text-[33px] prose-h1:text-2xl prose-h2:2xl:text-4xl prose-h2:lg:text-4xl prose-h2:md:text-3xl prose-h2:text-2xl prose-h3:2xl:text-4xl prose-h3:xl:text-3xl prose-h3:lg:text-3xl prose-h3:md:text-2xl prose-h3:sm:text-xl">
@@ -61,7 +58,8 @@ export default function Home() {
             </h1>
 
             <p className="leading-snug w-full md:mt-[50px] md:mb-[60px] sm:mt-12 my-9 sm:mb-10 2xl:text-3xl xl:text-2xl lg:text-2xl xl:w-full lg:w-2/3 md:w-full md:text-2xl sm:text-xl text-xl">
-              A collection of poop and fart-inspired styled components based on shadcn/ui.
+              A collection of poop and fart-inspired styled components based on
+              shadcn/ui.
             </p>
 
             <Link
@@ -94,7 +92,7 @@ export default function Home() {
                 <span>Shatcn components</span>
                 <Star26 color="var(--main)" stroke="black" strokeWidth={7} />
               </div>
-            )
+            );
           })}
         </Marquee>
         <div className="grid grid-cols-1 md:grid-cols-2 border-b-4 border-t-4 border-border">
@@ -274,7 +272,8 @@ export default function Home() {
                   <a
                     target="_blank"
                     className="underline font-heading"
-                    href="https://github.com/ekmas/shatcn-components/blob/main/CONTRIBUTING.md"
+                    href="https://github.com/markeljan/shatcn-components/blob/main/CONTRIBUTING.md"
+                    rel="noopener"
                   >
                     contributing.md
                   </a>{" "}
@@ -304,7 +303,7 @@ export default function Home() {
                 <span>Shatcn components</span>
                 <Star8 color="var(--main)" stroke="black" strokeWidth={7} />
               </div>
-            )
+            );
           })}
         </Marquee>
         <section className="inset-0 w-full flex flex-col items-center justify-center bg-main  bg-[linear-gradient(to_right,#00000033_1px,transparent_1px),linear-gradient(to_bottom,#00000033_1px,transparent_1px)] bg-[size:70px_70px] px-5 lg:py-[200px] md:py-[150px] sm:py-[100px] py-[100px]">
@@ -382,15 +381,16 @@ export default function Home() {
         Released under MIT License. The source code is available on{" "}
         <a
           target="_blank"
-          href="https://github.com/ekmas/shatcn-components"
+          href="https://github.com/markeljan/shatcn-components"
           className="underline font-heading"
+          rel="noopener"
         >
           Github
         </a>
         .
       </footer>
     </div>
-  )
+  );
 }
 
 const OpenSourceIcon = () => (
@@ -401,7 +401,7 @@ const OpenSourceIcon = () => (
       strokeWidth="30"
     />
   </svg>
-)
+);
 
 const ShadcnIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -429,7 +429,7 @@ const ShadcnIcon = () => (
       strokeWidth="32"
     ></line>
   </svg>
-)
+);
 
 const CustomizableIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
@@ -439,7 +439,7 @@ const CustomizableIcon = () => (
       strokeWidth="30"
     />
   </svg>
-)
+);
 
 const TailwindIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 481" fill="none">
@@ -468,4 +468,4 @@ const TailwindIcon = () => (
       />
     </g>
   </svg>
-)
+);
