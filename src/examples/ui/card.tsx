@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 
 import { Button } from "@/components/ui/button"
@@ -24,8 +26,8 @@ export default function CardDemo() {
           Enter your email below to login to your account
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <form>
+      <form>
+        <CardContent>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
               <Label htmlFor={emailId}>Email</Label>
@@ -40,7 +42,7 @@ export default function CardDemo() {
               <div className="flex items-center">
                 <Label htmlFor={passwordId}>Password</Label>
                 <a
-                  href="/"
+                  href="#"
                   className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
                 >
                   Forgot your password?
@@ -49,22 +51,22 @@ export default function CardDemo() {
               <Input id={passwordId} type="password" required />
             </div>
           </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full">
-          Login
-        </Button>
-        <Button variant="neutral" className="w-full">
-          Login with Google
-        </Button>
-        <div className="mt-4 text-center text-sm">
-          Don&apos;t have an account?{" "}
-          <a href="/" className="underline underline-offset-4">
-            Sign up
-          </a>
-        </div>
-      </CardFooter>
+        </CardContent>
+        <CardFooter className="flex-col gap-2">
+          <Button type="submit" className="w-full">
+            Login
+          </Button>
+          <Button variant="neutral" type="button" className="w-full">
+            Login with Google
+          </Button>
+          <div className="mt-4 text-center text-sm">
+            Don&apos;t have an account?{" "}
+            <a href="#" className="underline underline-offset-4">
+              Sign up
+            </a>
+          </div>
+        </CardFooter>
+      </form>
     </Card>
   )
 }
