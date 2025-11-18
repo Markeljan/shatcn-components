@@ -1,3 +1,5 @@
+"use client"
+
 import components from "@/data/components"
 import { STARS_EXAMPLES } from "@/data/stars"
 

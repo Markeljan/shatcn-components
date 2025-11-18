@@ -1,3 +1,5 @@
+"use client"
+
 import { ChartExample, charts } from "@/data/charts"
 
 import { Pre } from "@/components/app/pre"
@@ -5,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
